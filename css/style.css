@@ -13,8 +13,8 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  border: 1px solid rgb(132, 183, 224);
+  width: 256px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -23,7 +23,9 @@ body {
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+}
+.catagorie {
+  margin-top: 25px;
 }
 #all-products {
   display: grid;
@@ -42,11 +44,19 @@ body {
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid rgb(212, 211, 211);
 }
 .product-image {
   width: 150px;
   height: 150px;
+}
+.buy-now {
+  background-color: #6c7c57;
+  color: white;
+}
+.details {
+ background-color: #4a9b75;
+ color: white;
 }
 .cart {
   width: 350px;
