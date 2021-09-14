@@ -77,6 +77,7 @@ const updateTaxAndCharge = () => {
     setInnerText("delivery-charge", 60);
     setInnerText("total-tax", priceConverted * 0.4);
   }
+  updateTotal();
 };
 
 //grandTotal update function
@@ -84,6 +85,30 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-  document.getElementById("total").innerText = grandTotal;
+  document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 loadProducts();
+
+// optional section
+
+const bookNowBtn = document.getElementById('buy_now');
+bookNowBtn.addEventListener('click', function () {
+  const bookingFormArea = document.getElementById('my-cart');
+  bookingFormArea.style.display = "none";
+
+  const confarmationArea = document.getElementById('confarmation');
+  confarmationArea.style.display = "block";
+
+
+})
+
+const confarmOkBtn = document.getElementById('btn-confarm');
+confarmOkBtn.addEventListener('click', function () {
+
+  const confarmationArea = document.getElementById('confarmation');
+  confarmationArea.style.display = "none";
+
+  const bookingFormArea = document.getElementById('my-cart');
+  bookingFormArea.style.display = "block";
+
+})

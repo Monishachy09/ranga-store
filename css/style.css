@@ -106,6 +106,43 @@ margin-top:90px;
     padding-right: 10px;
   }
 }
+
+/* optional section */
+
+.confarmation{
+  text-align:center; 
+  display: none;
+  position: fixed;
+}
+.confarm-title{
+  color:gray;
+  padding-bottom: 20px;
+}
+.confarm-sub-title{
+  color:gray;
+  padding-bottom: 20px;
+}
+.btn-confarm{
+  width:50%;
+  height:30px;
+  border-radius: 5px;
+  color:#fff;
+  font-size: 15px;
+  background-color:  #52AF3A;
+  
+}
+.icon{
+  background-color:#52AF3A;
+  color:#fff;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  font-size:40px;
+  padding-top:30px;
+}
+
+
+
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
