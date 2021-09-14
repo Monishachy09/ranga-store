@@ -26,17 +26,21 @@
 </head>
 
 <body>
-  <header></header>
-  <main class="main">
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-info search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          <i class="fas fa-search"></i>
-        </button>
+  <header class="container">
+    <section>
+      <h1 class="text-center tittle">FLY <span class="clr">BUY</span></h1>
+      <div class="search-field">
+        <div class="search-box">
+          <input id="input-field" class="search-field" type="text" />
+          <button type="button" class="btn btn-info search-button" data-toggle="button" aria-pressed="false"
+            autocomplete="off" id="search-btn" onclick="loadProducts()">
+            Search
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
+  </header>
+  <main class="container">
     <div class="row catagorie">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
